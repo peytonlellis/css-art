@@ -1,0 +1,137 @@
+body {
+  background-color: #0c1444; /* Dark blue */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  }
+  
+
+  .circus {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  
+  .ring {
+    width: 300px;
+    height: 300px;
+    border: 20px solid #ff6f61;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+  
+  .clown {
+    width: 150px;
+    height: 200px;
+    background-color: #ffd700;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  
+  .hat {
+    width: 100px;
+    height: 100px;
+    background-color: #0d47a1;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  
+  .hat::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 30px solid #0d47a1;
+    top: -30px;
+    left: 0;
+  }
+  
+  .hat::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ffc107;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  
+  .balloon {
+    width: 60px;
+    height: 100px;
+    background-color: #ff9800;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-30deg);
+  }
+  
+  .string {
+    width: 2px;
+    height: 150px;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+  }
+
+  .moon {
+    width: 100px;
+    height: 100px;
+    background-color: #f9e86f; /* Yellow */
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: rotate(135deg);
+  }
+  
+  .star {
+    width: 3px;
+    height: 3px;
+    background-color: #ffffff; /* White */
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .star:nth-child(1) {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .star:nth-child(2) {
+    top: 60px;
+    left: 80px;
+  }
+  
+  .star:nth-child(3) {
+    top: 120px;
+    left: 180px;
+  }
+  
+  .star:nth-child(4) {
+    top: 80px;
+    left: 240px;
+  }
+  
+  .star:nth-child(5) {
+    top: 160px;
+    left: 320px;
+  }
+  
